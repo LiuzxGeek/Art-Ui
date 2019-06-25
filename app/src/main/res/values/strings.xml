@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">美姝</string>
+    <string name="sen_indicator">%1$d/%2$d</string>
+    <string name="str_photo_count_beyond">"最多只能添加%1$d张照片"</string>
+    <string name="str_add">"添加"</string>
+    <string name="str_known">"我知道了"</string>
+    <string name="filter_normal">正常</string>
+    <string name="filter_amaro">曝光</string>
+    <string name="filter_rise">增强</string>
+    <string name="filter_hudson">突出</string>
+    <string name="filter_xproii">暖黄</string>
+    <string name="filter_sierra">轻微</string>
+    <string name="filter_lomo">lomo</string>
+    <string name="filter_earlybird">明亮</string>
+    <string name="filter_sutro">忧郁</string>
+    <string name="filter_toaster">超亮</string>
+    <string name="filter_brannan">美白</string>
+    <string name="filter_inkwell">复古</string>
+    <string name="filter_walden">湖绿</string>
+    <string name="filter_hefe">海黄</string>
+    <string name="filter_valencia">海青</string>
+    <string name="filter_nashville">暖蓝</string>
+    <string name="filter_1977">清晰</string>
+    <string name="filter_lordkelvin">橘黄</string>
+    <string name="save_tip">图片保存在 %1$s</string>
+</resources>

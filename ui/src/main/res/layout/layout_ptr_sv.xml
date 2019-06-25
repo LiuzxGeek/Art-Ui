@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.art.uilibrary.pullrefresh.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                                                        android:id="@id/ptr_sv"
+                                                        android:layout_width="fill_parent"
+                                                        android:layout_height="fill_parent"
+                                                        android:layout_below="@id/toolbar"
+                                                        android:fadingEdge="none"
+                                                        android:fillViewport="true"
+                                                        android:listSelector="#00000000"
+                                                        android:overScrollMode="never"
+                                                        android:scrollbars="none"
+                                                        ptr:ptrAdapterViewBackground="#00000000"
+                                                        ptr:ptrAnimationStyle="app"
+                                                        ptr:ptrHeaderSubTextColor="@color/loading_subtitle_color"
+                                                        ptr:ptrHeaderTextColor="@color/loading_title_color"
+                                                        ptr:ptrMode="both"
+                                                        ptr:ptrShowIndicator="false">
+
+</com.art.uilibrary.pullrefresh.PullToRefreshScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_12_f7f7f7"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="22dp"
+            android:paddingBottom="20dp"
+            android:text="普清"
+            android:textColor="#ff333333"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff1f1f1" />
+
+        <TextView
+            android:id="@+id/tv_standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="22dp"
+            android:paddingBottom="20dp"
+            android:text="标清"
+            android:textColor="#ff333333"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff1f1f1" />
+
+        <TextView
+            android:id="@+id/tv_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="22dp"
+            android:paddingBottom="20dp"
+            android:text="高清"
+            android:textColor="#ff333333"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff1f1f1" />
+
+        <TextView
+            android:id="@+id/tv_super"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="22dp"
+            android:paddingBottom="20dp"
+            android:text="超清"
+            android:textColor="#ff333333"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff1f1f1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:paddingTop="15dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="17dp"
+            android:text="温馨提示：根据网速情况选择对应画质，不建议网络不好的情况使用高质量画质"
+            android:textColor="#ff666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+</FrameLayout>

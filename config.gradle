@@ -1,0 +1,23 @@
+ext {
+    android = [
+            minSdkVersion    : 17,
+            targetSdkVersion : 22,
+            compileSdkVersion: 26,
+            supportVersion   : '27.1.0',
+            buildToolsVersion: "28.0.3"
+    ]
+    project = [
+            versionCode: 6,
+            versionName: "1.0.5",
+    ]
+    dependency = [
+            "bugly-sdk" : "com.tencent.bugly:nativecrashreport:latest.release",
+            "bugly-upd" : "com.tencent.bugly:crashreport_upgrade:latest.release",
+            "weixin-sdk": "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+",
+    ]
+
+    viewDependencies = [
+    ]
+    dataDependencies = [
+    ]
+}

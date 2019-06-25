@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="loading_title_color">#FF909397</color>
+    <color name="loading_subtitle_color">#FFA0A3A7</color>
+
+</resources>

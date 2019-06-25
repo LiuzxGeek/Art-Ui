@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="14dp"
+            android:paddingTop="11dp"
+            android:text="@string/str_cancel"
+            android:textColor="#FFFFBD36"/>
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@id/cancel_layout"
+        android:background="#FFE8E8E8"
+        />
+
+    <RelativeLayout
+        android:id="@+id/item2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cut_line"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/item2_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp"
+            android:text="收藏"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/item2_layout"
+        android:background="#FFE8E8E8"
+        />
+
+    <RelativeLayout
+        android:id="@+id/item1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/item_line"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/item1_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp"
+            android:text="删除"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/item1_layout"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:textColor="#FFB5B5B5"
+            android:textSize="14sp"
+            tools:text="确定不再关注此人"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFE8E8E8"/>
+    </LinearLayout>
+</RelativeLayout>

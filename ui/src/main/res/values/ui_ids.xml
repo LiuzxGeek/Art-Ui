@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar" type="id"/>
+    <item name="toolbar_home_left" type="id"/>
+    <item name="toolbar_home_right" type="id"/>
+    <item name="toolbar_shadow_iv" type="id"/>
+
+    <item name="ptr_lv" type="id" />
+    <item name="ptr_sv" type="id" />
+
+    <item name="container" type="id"/>
+    <item name="loading" type="id"/>
+    <item name="shadow" type="id"/>
+
+    <!--  -->
+    <item name="img_iv" type="id"/>
+
+
+    <item name="right_arrow_iv" type="id"/>
+</resources>

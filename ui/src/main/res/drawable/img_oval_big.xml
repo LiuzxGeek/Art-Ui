@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 初始状态 -->
+    <item android:drawable="@mipmap/icon_oval_big_selected" android:state_selected="true"/>
+    <!-- 按下状态 -->
+    <item android:drawable="@mipmap/icon_oval_big_normal" android:state_selected="false"/>
+
+</selector>

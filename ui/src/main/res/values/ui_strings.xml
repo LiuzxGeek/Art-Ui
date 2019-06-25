@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">UiLibrary</string>
+
+    <!-- 工具栏上按钮的间距 -->
+    <dimen name="action_bar_button_margin">0dp</dimen>
+    <dimen name="action_bar_height">42dp</dimen>
+
+    <string name="str_follow">"+关注"</string>
+    <string name="str_followed">"已关注"</string>
+    <string-array name="follow_text">
+        <item name="normal">@string/str_follow</item>
+        <item name="focus">@string/str_follow</item>
+        <item name="select">@string/str_followed</item>
+    </string-array>
+    <string-array name="follow_background">
+        <item name="normal">@mipmap/icon_follow_normal</item>
+        <item name="focus">@mipmap/icon_follow_normal</item>
+        <item name="select">@mipmap/icon_follow_selected</item>
+    </string-array>
+    <string name="str_back">"返回"</string>
+    <string name="str_loading">"数据加载中&#8230;"</string>
+    <string name="str_loading_error">"数据加载出错"</string>
+
+
+    <string name="str_prompt">"提示"</string>
+    <string name="str_cancel">"取消"</string>
+    <string name="str_confirm">"确认"</string>
+    <string name="str_submit">"提交"</string>
+    <string name="str_close">"关闭"</string>
+
+    <!--图片-->
+    <string name="str_photo_count_beyond">"最多只能添加%1$d张照片"</string>
+    <string name="str_add">"添加"</string>
+    <string name="str_known">"我知道了"</string>
+
+</resources>

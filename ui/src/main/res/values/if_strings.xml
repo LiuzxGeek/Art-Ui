@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--左箭头-->
+    <string name="if_left_arrow">"\ue900"</string>
+    <!--右箭头-->
+    <string name="if_right_arrow">"\ue906"</string>
+    <!--关注-->
+    <string name="if_follow">"\ue911"</string>
+    <!--更多...实心-->
+    <string name="if_more_solid">"\ue90d"</string>
+    <!--更多...空心-->
+    <string name="if_more_hollow">"\ue90c"</string>
+    <!--更多more-->
+    <string name="if_more_word">"\ue912"</string>
+    <!--帖子评论-->
+    <string name="if_comment_msg">"\ue925"</string>
+    <!--帖子不喜欢-->
+    <string name="if_comment_unlike">"\ue926"</string>
+    <!--帖子喜欢-->
+    <string name="if_comment_like">"\ue927"</string>
+    <!--添加图片-->
+    <string name="if_add_pic">"\ue928"</string>
+</resources>

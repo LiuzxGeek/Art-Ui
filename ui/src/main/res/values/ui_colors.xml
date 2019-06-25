@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pop_bg">#7F000000</color>
+    <color name="line">#E8E8E8</color>
+
+    <color name="color_666666">#666666</color>
+    <color name="color_2C2C2C">#2C2C2C</color>
+    <color name="color_B5B5B5">#B5B5B5</color>
+    <color name="color_828282">#828282</color>
+    <color name="color_575757">#575757</color>
+    <color name="color_929292">#929292</color>
+    <color name="toolbar_line">#979797</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_FF4F4F">#FF4F4F</color>
+    <color name="color_FF4E4E">#FF4E4E</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_000050">#80000000</color>
+    <color name="color_FFBD36">#FFBD36</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_E8E8E8">#E8E8E8</color>
+    <color name="color_E9E9EB">#E9E9EB</color>
+
+    <color name="color_FF333333">#FF333333</color>
+
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="color_pop_sort">#0D000000</color>
+    <color name="color_DBDBDB">#DBDBDB</color>
+    <color name="color_000018">#000018</color>
+
+    <color name="psts_background_tab_pressed">#FFBD36</color>
+</resources>

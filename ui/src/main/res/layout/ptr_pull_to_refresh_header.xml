@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/pull_to_refresh_header_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp">
+
+        <ImageView
+            android:id="@+id/top_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ptr_progressbar_img" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/pull_to_refresh_header_arrow"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ptr_pull_arrow_down" />
+
+                <ProgressBar
+                    android:id="@+id/pull_to_refresh_header_progressbar"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:indeterminateDrawable="@anim/ptr_loading_progressbar_anim"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/pull_to_refresh_header_text"
+                android:layout_width="115dp"
+                android:layout_marginLeft="@dimen/pull_to_refresh_header_progressbar_right_margin"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:id="@+id/pull_to_refresh_header_hint_textview"
+                    style="@style/TextStyle"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="@string/pull_to_refresh_header_hint_normal"
+                    android:textColor="@color/color_666666" />
+
+                <TextView
+                    android:id="@+id/pull_to_refresh_last_update_time_text"
+                    style="@style/TextStyle"
+                    android:layout_below="@id/pull_to_refresh_header_hint_textview"
+                    android:layout_marginTop="@dimen/pull_to_refresh_last_update_time_top_margin"
+                    android:paddingLeft="0dp"
+                    android:textColor="@color/color_666666"
+                    android:visibility="gone" />
+                <!-- android:text="@string/pull_to_refresh_header_last_time" -->
+
+                <TextView
+                    android:id="@+id/pull_to_refresh_header_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pull_to_refresh_header_hint_textview"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/pull_to_refresh_last_update_time_top_margin"
+                    android:layout_toRightOf="@id/pull_to_refresh_last_update_time_text"
+                    android:minWidth="50dp"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/pull_to_refresh_last_update_time_text_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
