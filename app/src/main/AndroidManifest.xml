@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="zhonglian.meishu">
+    package="com.art.main.ui">
     <!-- 访问网络状态 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -22,9 +22,9 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
-        android:name=".MsApplication"
         android:allowBackup="false"
-        android:icon="@mipmap/icon_logo"
+        android:name="android.app.Application"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
@@ -38,21 +38,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".BeautyActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".CameraActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".FilterActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.art.framework.view.activity.image.ImageAllActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.art.framework.view.activity.image.ImageViewActivity"
-            android:screenOrientation="portrait" />
         <activity
             android:name="com.tencent.bugly.beta.ui.BetaActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|locale"

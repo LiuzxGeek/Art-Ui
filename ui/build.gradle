@@ -1,9 +1,7 @@
 apply plugin: 'com.android.library'
-
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     buildToolsVersion rootProject.ext.android.buildToolsVersion
-
     defaultConfig {
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
@@ -28,91 +26,16 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api "com.android.support:appcompat-v7:$rootProject.ext.android.supportVersion"
-    api "com.android.support:recyclerview-v7:$rootProject.ext.android.supportVersion"
-    api "com.android.support:cardview-v7:$rootProject.ext.android.supportVersion"
-    api "com.android.support:design:$rootProject.ext.android.supportVersion"
+    api "com.android.support:appcompat-v7:27.1.1"
+    api "com.android.support:recyclerview-v7:27.1.1"
+    api "com.android.support:cardview-v7:27.1.1"
+    api "com.android.support:design:27.1.1"
     //glide 官方要求support AndroidAPI25.3.1
-    api "com.github.bumptech.glide:glide:$glide_version"
-    annotationProcessor "com.github.bumptech.glide:glide:$glide_version"
+    api "com.github.bumptech.glide:glide:4.9.0"
+    annotationProcessor "com.github.bumptech.glide:glide:4.9.0"
     //statusbar
     api 'com.githang:status-bar-compat:latest.integration'
     //roundImageView
-    api "com.makeramen:roundedimageview:$roundedimageview_version"
+    api "com.makeramen:roundedimageview:2.3.0"
 }
-
-
-// 然后你可以拷贝下面这一大段 修改注释的地方
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
-
-version = "0.0.1"// 区分library版本
-
-def siteUrl = 'https://github.com/LiuzxGeek/Art-Ui.git'   // 项目的主页 github地址
-def gitUrl = 'git@github.com:LiuzxGeek/Art-Ui.git'   // Git仓库的url
-group = "com.art.ui"            // Maven Group ID for the artifact，一般填你唯一的包名
-install {
-    repositories.mavenInstaller {
-        pom {
-            project {
-                packaging 'aar'
-                //项目的描述
-                name 'Android Framework.'
-                url siteUrl
-                // 许可证说明
-                licenses {
-                    license {
-                        name 'The Apache Software License, Version 2.0'
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    }
-                }
-                developers {
-                    //开发者的基本信息，根据自己喜好填上就是
-                    developer {
-                        id 'liuzxgeek'
-                        name 'xian'
-                        email 'liuzx.soho@gmail.com'
-                    }
-                }
-                scm {
-                    connection gitUrl
-                    developerConnection gitUrl
-                    url siteUrl
-                }
-            }
-        }
-    }
-}
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
-}
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    options.linkSource true
-    classpath += project.files(project.android.getBootClasspath().join(File.pathSeparator))
-    failOnError false
-}
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
-    configurations = ['archives']
-    pkg {
-        repo = "maven"
-        name = "art-ui"    //发布到JCenter上的项目名字
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = ["Apache-2.0"]
-        publish = true
-    }
-}
+apply from: './jfrog.gradle'
