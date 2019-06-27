@@ -2,7 +2,7 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "0.0.4"// 区分library版本
+version = "0.0.7"// 区分library版本
 
 def siteUrl = 'https://github.com/LiuzxGeek/Art-Ui.git'   // 项目的主页 github地址
 def gitUrl = 'https://github.com/LiuzxGeek/Art-Ui.git'   // Git仓库的url

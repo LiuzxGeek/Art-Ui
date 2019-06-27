@@ -26,16 +26,35 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api "com.android.support:appcompat-v7:27.1.1"
-    api "com.android.support:recyclerview-v7:27.1.1"
-    api "com.android.support:cardview-v7:27.1.1"
-    api "com.android.support:design:27.1.1"
-    //glide 官方要求support AndroidAPI25.3.1
-    api "com.github.bumptech.glide:glide:4.9.0"
-    annotationProcessor "com.github.bumptech.glide:glide:4.9.0"
+    api ('com.android.support:appcompat-v7:27.1.1') {
+        //enabling all transitive dependencies of this dependency
+        transitive = true
+    }
+    api ('com.android.support:recyclerview-v7:27.1.1') {
+        //enabling all transitive dependencies of this dependency
+        transitive = true
+    }
+    api ('com.android.support:cardview-v7:27.1.1') {
+        //enabling all transitive dependencies of this dependency
+        transitive = true
+    }
+    api ('com.android.support:design:27.1.1') {
+        //enabling all transitive dependencies of this dependency
+        transitive = true
+    }
+    api ('com.github.bumptech.glide:glide:4.9.0') {
+        //enabling all transitive dependencies of this dependency
+        transitive = true
+    }
     //statusbar
-    api 'com.githang:status-bar-compat:latest.integration'
+    api ('com.githang:status-bar-compat:latest.integration') {
+        //enabling all transitive dependencies of this dependency
+        transitive = true
+    }
     //roundImageView
-    api "com.makeramen:roundedimageview:2.3.0"
+    api ('com.makeramen:roundedimageview:2.3.0') {
+        //enabling all transitive dependencies of this dependency
+        transitive = true
+    }
 }
 apply from: './jfrog.gradle'
