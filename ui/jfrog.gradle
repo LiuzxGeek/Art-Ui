@@ -2,19 +2,20 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "0.0.7"// 区分library版本
+version = PROJ_VERSION// 区分library版本
 
-def siteUrl = 'https://github.com/LiuzxGeek/Art-Ui.git'   // 项目的主页 github地址
-def gitUrl = 'https://github.com/LiuzxGeek/Art-Ui.git'   // Git仓库的url
-group = "com.art.ui"            // Maven Group ID for the artifact，一般填你唯一的包名
+def siteUrl = PROJ_WEBSITEURL   // 项目的主页 github地址
+def gitUrl = PROJ_WEBSITEURL   // Git仓库的url
+group = PROJ_GROUP           // Maven Group ID for the artifact，一般填你唯一的包名
 install {
     repositories.mavenInstaller {
         pom {
             project {
                 packaging 'aar'
                 //项目的描述
-                name 'Android Ui.'
+                name PROJ_DESCRIPTION
                 url siteUrl
+                artifactId PROJ_ARTIFACTID
                 // 许可证说明
                 licenses {
                     license {
@@ -25,15 +26,52 @@ install {
                 developers {
                     //开发者的基本信息，根据自己喜好填上就是
                     developer {
-                        id 'liuzxgeek'
-                        name 'xian'
-                        email 'liuzx.soho@gmail.com'
+                        id DEVELOPER_ID
+                        name DEVELOPER_NAME
+                        email DEVELOPER_EMAIL
                     }
                 }
                 scm {
                     connection gitUrl
                     developerConnection gitUrl
                     url siteUrl
+                }
+                dependencies {
+                    dependency {
+                        groupId 'com.android.support'
+                        artifactId 'appcompat-v7'
+                        version "$rootProject.ext.android.supportVersion"
+                    }
+                    dependency {
+                        groupId 'com.android.support'
+                        artifactId 'recyclerview-v7'
+                        version "$rootProject.ext.android.supportVersion"
+                    }
+                    dependency {
+                        groupId 'com.android.support'
+                        artifactId 'cardview-v7'
+                        version "$rootProject.ext.android.supportVersion"
+                    }
+                    dependency {
+                        groupId 'com.android.support'
+                        artifactId 'design'
+                        version "$rootProject.ext.android.supportVersion"
+                    }
+                    dependency {
+                        groupId 'com.github.bumptech.glide'
+                        artifactId 'glide'
+                        version "$glide_version"
+                    }
+                    dependency {
+                        groupId 'com.githang'
+                        artifactId 'status-bar-compat'
+                        version "$githang_version"
+                    }
+                    dependency {
+                        groupId 'com.makeramen'
+                        artifactId 'roundedimageview'
+                        version "$roundedimageview_version"
+                    }
                 }
             }
         }
@@ -65,7 +103,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "art-ui"    //发布到JCenter上的项目名字
+        name = PROJ_NAME    //发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
