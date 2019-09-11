@@ -15,6 +15,7 @@ buildscript {
     ext.multidex_version = '1.0.2'
     ext.roundedimageview_version = '2.3.0'
     ext.videocache_version='2.7.1'
+    ext.githang_version='latest.integration'
     repositories {
         google()
         jcenter()
