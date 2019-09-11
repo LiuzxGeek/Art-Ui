@@ -17,24 +17,6 @@
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
     </style>
-    <!-- plug psts -->
-    <declare-styleable name="PagerSlidingTabStrip">
-        <attr name="pstsIndicatorColor" format="color"/>
-        <attr name="pstsUnderlineColor" format="color"/>
-        <attr name="pstsDividerColor" format="color"/>
-        <attr name="pstsIndicatorHeight" format="dimension"/>
-        <attr name="pstsUnderlineHeight" format="dimension"/>
-        <attr name="pstsDividerPadding" format="dimension"/>
-        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
-        <attr name="pstsScrollOffset" format="dimension"/>
-        <attr name="pstsTabBackground" format="reference"/>
-        <attr name="pstsShouldExpand" format="boolean"/>
-        <attr name="pstsTextAllCaps" format="boolean"/>
-        <attr name="pstsIndicatorPadding" format="dimension" />
-        <attr name="pstsTextColor" format="color" />
-        <attr name="pstsTextSize" format="dimension" />
-        <attr name="pstsTextSizeSelect" format="dimension" />
-    </declare-styleable>
 
     <declare-styleable name="CircleImageView">
         <attr name="civ_border_width" format="dimension"/>
