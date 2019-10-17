@@ -5,7 +5,7 @@ def releaseTime() {
 }
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.art.main.ui"
         minSdkVersion rootProject.ext.android.minSdkVersion

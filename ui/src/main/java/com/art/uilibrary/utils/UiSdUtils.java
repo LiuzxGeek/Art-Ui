@@ -15,7 +15,7 @@ public class UiSdUtils {
     /**
      * 存储卡中的根目录
      */
-    private final static String FILE_FOLDER = "/WanxingRen/";
+    private final static String FILE_FOLDER = "/ArtUi/";
 
     final static String FILE_LOG = "/log";
 

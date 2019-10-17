@@ -20,19 +20,14 @@ import com.art.uilibrary.R;
 public class LoadingDialog {
     private Context mContext;
     private static Dialog mDialog;
-    private ImageView mImg;
-    private Display mDisplay;
 
     public LoadingDialog(Context context) {
         this.mContext = context;
-        WindowManager windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
-        mDisplay = windowManager.getDefaultDisplay();
     }
 
 
     public LoadingDialog builder() {
         // 获取Dialog布局
-
         View view = LayoutInflater.from(mContext).inflate(R.layout.dialog_loading, null);
         // 定义Dialog布局和参数
         mDialog = new Dialog(mContext, android.R.style.Theme_Translucent_NoTitleBar);
