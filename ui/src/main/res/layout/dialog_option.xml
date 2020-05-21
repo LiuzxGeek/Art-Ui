@@ -23,7 +23,7 @@
             android:paddingBottom="14dp"
             android:paddingTop="11dp"
             android:text="@string/str_cancel"
-            android:textColor="#FFFFBD36"/>
+            android:textColor="@color/color_theme"/>
     </RelativeLayout>
 
 

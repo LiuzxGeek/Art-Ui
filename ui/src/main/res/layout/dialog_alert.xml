@@ -66,7 +66,7 @@
                 android:paddingBottom="16dp"
                 android:paddingTop="10dp"
                 android:text="@string/str_cancel"
-                android:textColor="#FFFFBD36"
+                android:textColor="@color/color_theme"
                 android:textSize="17sp"
                 tools:text="取消"/>
 
@@ -86,7 +86,7 @@
                 android:paddingBottom="16dp"
                 android:paddingTop="10dp"
                 android:text="@string/str_confirm"
-                android:textColor="#FFFFBD36"
+                android:textColor="@color/color_theme"
                 android:textSize="17sp"
                 tools:text="确认"/>
 

@@ -11,8 +11,6 @@ ext {
             versionName: "1.0.5",
     ]
     dependency = [
-            "bugly-sdk" : "com.tencent.bugly:nativecrashreport:latest.release",
-            "bugly-upd" : "com.tencent.bugly:crashreport_upgrade:latest.release",
             "weixin-sdk": "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+",
     ]
 
